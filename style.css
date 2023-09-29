@@ -1,18 +1,21 @@
 
 body {
-    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     min-height: 100vh;
     background-color: #1F2937;
-    color: #fff;
+    color: #F9FAF8;
     display: flex; 
     flex-direction: column;
 }
-  
+  .headerLogoText{
+    font-size: 24px;
+  }
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 10px 80px 10px;
+    margin: 20px 200px;
+    font-size: 18px;
 }
 
 ul{
@@ -28,30 +31,83 @@ a{
     color: #fff;
 }
 
-.infoHeader{
+.hero{
     display: flex; 
     justify-content: flex-start;
-    margin: 40px 80px auto; 
+    margin: 130px 200px;
+    gap: 10px;
 }
-.infoHeaderColumn{
+.heroColumn{
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
-    flex: 1 0 auto; 
-
+    flex: 0 1 100%; 
 }
-.infoHeaderImage{
+
+.heroHeadline{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.heroSubtext{
+    font-size: 18px;
+}
+
+.heroImage{
     display: flex; 
-    flex: 1 0; 
+    justify-content: center;
+    align-items: center;
+
 }
 
 
+.btn-SignUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+}
+
+
+/*https://pixabay.com/users/920941/?tab=vectors&order=latest&pagi=1*/
 .information{
     display: flex;
     flex: 1;
     justify-content: center;
+    align-items: center;
     color: black;
     background-color: #fff;
+    flex-direction: column;
+}
+
+.information_imageContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+    
+}
+.imageColumn{
+    display: flex;
+    flex-direction: column;
+}
+.imageBox{
+    height: 200px;
+    width: 200px;
+    border: solid;
+    border-color: #3882F6;
+    border-radius: 15px;
+}
+
+.quoteSection{
+    background-color: #E5e7EB;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic; 
 }
 
 .footer{
