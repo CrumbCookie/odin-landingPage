@@ -9,11 +9,13 @@ body {
     flex-direction: column;
 }
   .headerLogoText{
+    font-weight: bold;
     font-size: 24px;
   }
 .header{
     display: flex;
     justify-content: space-between;
+    
     margin: 20px 200px;
     font-size: 18px;
 }
@@ -60,19 +62,21 @@ a{
 
 }
 
-
 .btn-SignUp{
     display: flex;
     justify-content: center;
+    font-style: normal;
+    font-size: 18px;
     align-items: center;
     background-color: #3882F6;
     border-radius: 15px;
     width: 120px;
     height: 40px;
 }
+.btn-SignUp:hover{
+    background-color: #1f52a5;
+}
 
-
-/*https://pixabay.com/users/920941/?tab=vectors&order=latest&pagi=1*/
 .information{
     display: flex;
     flex: 1;
@@ -81,34 +85,106 @@ a{
     color: black;
     background-color: #fff;
     flex-direction: column;
+    padding-bottom: 100px;
 }
 
+.informationHeadline{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin: 50px auto;
+}
 .information_imageContainer{
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    
-    
+    justify-content: space-evenly;
 }
+
+
 .imageColumn{
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    flex: 0 0 0; 
 }
 .imageBox{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border: solid;
     border-color: #3882F6;
     border-radius: 15px;
 }
-
-.quoteSection{
+.imageBox > img{
+    
+    border-radius: 10px;    
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.imageBoxSubText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qoute{
     background-color: #E5e7EB;
     color: #1F2937;
     font-size: 36px;
     font-weight: lighter;
     font-style: italic; 
+    padding: 150px 650px;
+    display: flex;
+    flex-direction: column;
 }
+
+.qouteText{
+    flex: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.qouteSignature{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    flex: 0;
+}
+.pageFooter{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actionDialoge{
+    background-color: #3882F6;
+    margin: 100px;
+    padding: 50px;
+    border: solid; 
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+
+.actionDialogeHeader{
+    display: flex; 
+    flex-direction: column;
+    font-size: large;
+    font-weight: bold;
+}
+.actionDialogeText{
+    flex: 0 1 100%; 
+}
+
+.actionDialoge > .btn-SignUp {
+    border-color: #fff;
+    border: solid; 
+}
+
+
 
 .footer{
     display: flex;
